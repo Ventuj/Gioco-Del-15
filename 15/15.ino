@@ -80,22 +80,22 @@ void loop() {
     delay(200);
   }
   if(digitalRead(bup) == HIGH && start){
-    up();
-    printMatrix();
-    delay(200);
-  }
-  if(digitalRead(bdx) == HIGH && start){
-    dx();
-    printMatrix();
-    delay(200);
-  }
-  if(digitalRead(bdw) == HIGH && start){
     dw();
     printMatrix();
     delay(200);
   }
-  if(digitalRead(bsx) == HIGH && start){
+  if(digitalRead(bdx) == HIGH && start){
     sx();
+    printMatrix();
+    delay(200);
+  }
+  if(digitalRead(bdw) == HIGH && start){
+    up();
+    printMatrix();
+    delay(200);
+  }
+  if(digitalRead(bsx) == HIGH && start){
+    dx();
     printMatrix();
     delay(200);
   }
