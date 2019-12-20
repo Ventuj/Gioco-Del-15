@@ -109,7 +109,6 @@ void checkvittoria(){
         if(matrix[3][0] == 13 && matrix[3][1] == 14 && matrix[3][2] == 15 && matrix[3][3] == 0){
           start = false;
           lcd.clear();
-          resetMatrix();
           TopStructure("Hai vinto!");
         }
       }
@@ -153,6 +152,9 @@ void resetMatrix(){
       c++;
     }
   }
+  matrix[3][3] = 0;
+  x = 3; 
+  y = 3;
 }
 
 void genMatrix(){
